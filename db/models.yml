@@ -3,7 +3,10 @@ Book:
   - author: string
   - price: integer
 
-
+Review:
+  - title: string
+  - rating: integer
+  - review: text
 
 
 
