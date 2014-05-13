@@ -2,6 +2,7 @@ Book:
   - title: string
   - author: string
   - price: integer
+  - avgrating: text
 
 Review:
   - title: string

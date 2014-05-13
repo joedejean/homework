@@ -1,12 +1,15 @@
-<h1>Book table</h1>
 
 <% all_books = Book.read %>
 
+<h2>Our Books</h2>
 
 
-<div>
- <%= Book.first["title"] %>
 
-</div>
+  <% all_books.each do |book| %>
+
+    <li>
+    <%= book["title"] %> by <%= book["author"] %> for $<%= book["price"] %> with average rating of <%= book["avgrating"] %> </li>
 
 
+
+<%end%>
